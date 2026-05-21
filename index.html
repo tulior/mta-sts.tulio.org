@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MTA-STS Policy - tulio.org</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 42rem;
+      width: 100%;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 1rem;
+      border: 1px solid currentColor;
+      border-radius: 0.5rem;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MTA-STS Policy for tulio.org</h1>
+
+    <p>
+      This host serves the MTA-STS policy for <code>tulio.org</code>.
+    </p>
+
+    <p>
+      Policy file:
+      <a href="/.well-known/mta-sts.txt">
+        <code>/.well-known/mta-sts.txt</code>
+      </a>
+    </p>
+
+    <pre><code>version: STSv1
+mode: testing
+mx: smtp.google.com
+max_age: 86400</code></pre>
+  </main>
+</body>
+</html>
